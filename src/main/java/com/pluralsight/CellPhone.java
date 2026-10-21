@@ -23,6 +23,14 @@ public class CellPhone {
         this.owner = owner;
     }
 
+    public void createCellPhone(CellPhone phone) {
+        this.serialNumber = phone.serialNumber;
+        this.model = phone.model;
+        this.carrier = phone.carrier;
+        this.phoneNumber = phone.phoneNumber;
+        this.owner = phone.owner;
+    }
+
     // getters
     public String getSerialNumber () {
         return serialNumber;
