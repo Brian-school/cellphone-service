@@ -8,13 +8,14 @@ public class CellPhone {
     private String owner;
 
     public void createCellPhone() {
-        serialNumber = "0";
-        model = "";
-        carrier = "";
-        phoneNumber = "";
-        owner = "";
+        this.serialNumber = "0";
+        this.model = "";
+        this.carrier = "";
+        this.phoneNumber = "";
+        this.owner = "";
     }
 
+    // getters
     public String getSerialNumber () {
         return serialNumber;
     }
@@ -35,6 +36,7 @@ public class CellPhone {
         return owner;
     }
 
+    //  setters
     public void setCarrier(String carrier) {
         this.carrier = carrier;
     }
@@ -54,4 +56,11 @@ public class CellPhone {
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
+
+    public void dial(String number) {
+        System.out.printf("%s's phone is calling %s",
+                this.phoneNumber,
+                number);
+    }
+
 }
